@@ -52,7 +52,7 @@ local Mouse = LocalPlayer:GetMouse()
 local Camera = workspace.CurrentCamera
 
 local function getfile(name)
-    local repo = "https://github.com/dedsamodell-cell/ded/blob/main/lua"
+    local repo = "https://raw.githubusercontent.com/dedsamodell-cell/ded/refs/heads/main/lua"
     local success, content = pcall(game.HttpGet, game, repo..name)
     if success then return content else return print("getfile returned error \""..content.."\"") end
 end
@@ -194,7 +194,7 @@ cheat.utility = {} do
     end
 end
 
-cheat.Library, cheat.Toggles, cheat.Options = loadstring(game:HttpGet('https://raw.githubusercontent.com/some1strange/builds/refs/heads/main/LinoriaModded.lua'))()
+cheat.Library, cheat.Toggles, cheat.Options = loadstring(game:HttpGet('https://github.com/dedsamodell-cell/ded/blob/main/lua'))()
 cheat.ThemeManager = loadswimhubfile("library_theme.lua")()
 cheat.SaveManager = loadswimhubfile("library_save.lua")()
 local ui = {
