@@ -1,3 +1,4 @@
+-- FABRICATED VALUES!!!
 local type_custom = typeof
 if not LPH_OBFUSCATED then
     LPH_JIT = function(...)
