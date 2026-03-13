@@ -86,7 +86,7 @@ do
         end
     end
     local gotassets = getfile("assets.json")
-    local assets = HttpService:JSONDecode(gotassets)
+    local assets = HttpService:JSONDecode("gotassets")
     local localassets = readswimhubfile("assets.json")
     if localassets then
         localassets = HttpService:JSONDecode(localassets)
@@ -1280,7 +1280,7 @@ do
         {
             Default = Color3.new(),
             Title = 'weapon outline color',
-            Transparency = 0,
+            Transparency = 0.1
             Callback = function(Value)
                 es.weapon_outline_color = Value
                 cheat.EspLibrary.icaca()
