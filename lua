@@ -51,7 +51,7 @@ local Mouse = LocalPlayer:GetMouse()
 local Camera = workspace.CurrentCamera
 
 local function getfile(name)
-    local repo = "https://raw.githubusercontent.com/dedsamodell-cell/DEDSAMODELL/refs/heads/main/dedsamodell"
+    local repo = "https://github.com/dedsamodell-cell/ded/blob/main/lua"
     local success, content = pcall(game.HttpGet, game, repo..name)
     if success then return content else return print("getfile returned error \""..content.."\"") end
 end
